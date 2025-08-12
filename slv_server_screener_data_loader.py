@@ -1,5 +1,5 @@
 #uvicorn algo_scripts.algotrade.scripts.server.slv_server_data_loader:app --log-level debug
-from get_intra_stock_alerts import get_intraday_stock_alerts
+from feature1_intraday_stock_alerts.get_intraday_alerts import run_scraper as get_intraday_stock_alerts
 
 from algo_scripts.algotrade.scripts.trade_utils.trade_logger import get_trade_actions_dynamic_logger, \
     get_sell_logger_name, get_screener_logger_name
